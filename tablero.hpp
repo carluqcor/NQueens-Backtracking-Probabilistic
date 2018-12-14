@@ -1,3 +1,10 @@
+/*!
+  \file   tablero.hpp
+  \brief  Board Functions
+  \author Carlos Luque Córdoba
+  \date   2018/12/14
+*/
+
 #ifndef TABLERO_HPP
 #define TABLERO_HPP
 #include <iostream>
@@ -25,7 +32,7 @@ class Tablero{
 		/**
 		* @brief      Gets a value from table.
 		*
-		* @param[in]  i     { Position }
+		* @param[in]  i       Position
 		*
 		* @return     The tablero.
 		*/
@@ -45,11 +52,18 @@ class Tablero{
 		/**
 		* @brief      Sets the tablero value by value.
 		*
-		* @param[in]  i     { Position }
-		* @param[in]  n     { Value to set }
+		* @param[in]  i       Position
+		* @param[in]  n       Value to set
 		*/
 		inline void setTablero(int i, Solucion n){
 			_tablero[i]=n;
+		}
+
+		/**
+		 * @brief      Clears the board vector
+		 */
+		inline void clearTablero(){
+			_tablero.clear();
 		}
 
 		/**
@@ -59,6 +73,9 @@ class Tablero{
 		*/
 		void introducirSolucionTablero(std::vector<int> solution);
 
+		/**
+		 * @brief      Resizes the board vector
+		 */
 		inline void resizeTablero(){
 			_tablero.resize(getSizeTableros()+1);
 		}

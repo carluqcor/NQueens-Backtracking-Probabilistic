@@ -1,3 +1,10 @@
+/*!
+  \file   solucion.hpp
+  \brief  Solution Functions
+  \author Carlos Luque Córdoba
+  \date   2018/12/14
+*/
+
 #ifndef SOLUCION_HPP
 #define SOLUCION_HPP
 #include <iostream>
@@ -12,12 +19,12 @@ class Solucion{
 
 	private:
 		/**
-		* { Private int vector for a solution }
+		* 	Private int vector for a solution
 		*/
 		std::vector<int> _solucion;
 
 		/**
-		* { Private ID for such solution }
+		* 	Private ID for such solution
 		*/
 		int _id;
 
@@ -31,7 +38,7 @@ class Solucion{
 		/**
 		* @brief      Gets a value from solution.
 		*
-		* @param[in]  i     { Position }
+		* @param[in]  i     	Position
 		*
 		* @return     The tablero.
 		*/
@@ -60,8 +67,8 @@ class Solucion{
 		/**
 		* @brief      Sets the solucion.
 		*
-		* @param[in]  i     { Position }
-		* @param[in]  n     { Value to set }
+		* @param[in]  i     	Position
+		* @param[in]  n     	Value to set
 		*/
 		inline void setSolucion(int i, int n){
 			_solucion[i]=n;

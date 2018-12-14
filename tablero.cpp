@@ -1,3 +1,10 @@
+/*!
+  \file   tablero.cpp
+  \brief  Board Functions
+  \author Carlos Luque Córdoba
+  \date   2018/12/14
+*/
+
 #include <iostream>
 #include <vector>
 #include <fstream>
