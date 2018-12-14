@@ -14,15 +14,14 @@ void Tablero::introducirSolucionTablero(std::vector<int> solution){
 	}
 	solucion.setID(getSizeTableros()+1);
 
-	std::vector<Solucion> table;
+	std::vector<Solucion> board;
 	for(int i=0;i<getSizeTableros();i++){
-		table.push_back(getTablero(i));
+		board.push_back(getTablero(i));
 	}
-	table.push_back(solucion);
+	board.push_back(solucion);
 
 	resizeTablero();
-	for(int i=0;i<table.size();i++){
-		setTablero(i, table[i]);
+	for(int i=0;i<board.size();i++){
+		setTablero(i, board[i]);
 	}
-	std::cout<<"\n\n\n\n";
 }
